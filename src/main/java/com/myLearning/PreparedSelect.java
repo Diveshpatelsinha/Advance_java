@@ -16,7 +16,7 @@ public class PreparedSelect {
 
        try(
                Connection conn = DriverManager.getConnection(url, user, password);
-               PreparedStatement ps = conn.prepareStatement(sql);
+               PreparedStatement ps = conn.prepareStatement(sql)
                ){
 
            ps.setString(1, course);
